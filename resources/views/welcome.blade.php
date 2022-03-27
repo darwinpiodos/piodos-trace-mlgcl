@@ -64,7 +64,12 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+
+
+            @include('template')
+
+            
+        <!-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -77,7 +82,9 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif -->
+
+@section('content')
 
             <div class="content">
                 <div class="title m-b-md">
@@ -95,6 +102,8 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
+         
         </div>
     </body>
 </html>
